@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #6a3093;  
+background: -webkit-linear-gradient(to left, #a044ff, #6a3093);  
+background: linear-gradient(to left, #a044ff, #6a3093); 
+
+    font-family: 'Poppins';
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+ul,li{
+    list-style: none;
+}
+.container{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+.container .upper{
+    max-width: 93%;
+    margin: 0 auto;
+}
+.container div h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container div .adding-item{
+    max-width: 100%;
+    display: flex;
+    column-gap: 5px;
+}
+.container div .adding-item input{
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.container div .adding-item input:focus{
+    border: 1px solid #BB91EC;
+}
+
+.container div .adding-item button{
+    padding: 8px 12px;
+    outline: none;
+    border: none;
+    background-color: #BB91EC;
+    cursor: pointer;
+    border-radius: 3px;
+ 
+}
+
+.container div .adding-item  .active{
+    background-color: #a044ff;
+    
+}
+
+.container div .adding-item button i{
+    font-size:18px ;
+    color: white;
+    font-weight: 700;
+}
+
+.container .todo-list{
+    /* border: 1px solid black; */
+    border-bottom: 2px solid rgb(206, 206, 206);
+    margin: 0 auto;
+    max-width: 93%;
+    max-height: 200px;
+    margin-top: 20px;
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.container .todo-list .list-items{
+    overflow: auto;
+    height: auto;
+    /* border: 1px solid black; */
+
+}
+
+.container .todo-list .list-items .item{
+    position: relative;
+    display: flex;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.container .todo-list .list-items .item i{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    padding: 14px;
+    border-radius: 0 4px 4px 0;
+    right: -45px;
+    bottom: 6px;
+    transition: all .2s ease;
+    cursor: pointer;
+
+}
+.container .todo-list .list-items .item:hover i{
+    right: 0;
+}
+
+.container .todo-list .list-items .item li{
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+
+}
+
+
+
+.container .end{
+    display: flex;
+    justify-content: space-between;
+    max-width: 93%;
+    margin: 0 auto;
+    margin-top:15px;
+
+}
+
+.container .end .left-task{
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+    margin: 0;
+}
+
+.container .end .left-task p{
+    font-size: 14px;
+}
+
+.container .end .clear button{
+    padding: 8px 18px;
+    outline: none;
+    border: none;
+    background-color: #9f4ffa;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 40px;
+
+}
